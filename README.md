@@ -12,11 +12,8 @@ a ponta de um cliente que:
 5- Adicione o carrinho
 6- Valide o produto no carrinho
 
-#################################### Passos de instalação cypress:
+#################################### Instalação do cypress:
 
-https://docs.cypress.io/guides/getting-started/installing-cypress.html#Installing
-
-Instalação Cypress:
 https://docs.cypress.io/pt-br/guides/getting-started/installing-cypress.html#npm-install
 
 #################################### Passos para executar o projeto:
