@@ -79,9 +79,15 @@ Then devo ver o item adicionado com sucesso
 ##FALHA## - Imperativo
 
 Feature: Fluxo de Compra com Produto Indisponivel
+
 Scenario: Dado que eestou acessando o site https://www.kabum.com.br/
+
 Quando pesquiso por Placa de Vídeo VGA NVIDIA EVGA GEFORCE GTX 1070 na barra da página inicial
+
 E clico botão Buscar
+
 E navego a página de detalhes do produto
+
 E clico no botão de avise-me quando chegar
+
 Então preencho meu e-mail na pop-up que abrir
