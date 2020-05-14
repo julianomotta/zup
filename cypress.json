@@ -1,0 +1,15 @@
+{
+    "baseUrl": "https://www.kabum.com.br/",
+    "ignoreTestFiles": "*.js",
+	"trashAssetsBeforeRuns": false,
+	"chromeWebSecurity": false,
+    "video": true,
+    "videosFolder":"cypress/videos",
+    "screenshotsFolder":"cypress/screenshots",
+	"videoCompression":32,
+    "viewportWidth":1040,
+    "viewportHeight": 600,    
+    "numTestsKeptInMemory":50,
+	"requestTimeout":5000,
+	"responseTimeout":30000	
+}
