@@ -29,15 +29,37 @@ Passo 0
 - Instalar o visual code em sua máquina: https://code.visualstudio.com/download
 
 Passo 1
-- Baixar o projeto de preferencia no C:\ ou em qualquer diretório de sua preferencia;
+- Criar uma pasta no C:\ com o nome que desejar;
 
 Passo 2
-- Abrir o projeto na pasta e2e;
+- Abrir o prompt de comando "cmd" e ir até a pasta criada;
+ou
+- Digitar cmd na pasta onde será aberto o terminal. //o mesmo é aberto com a url certa
 
 Passo 3
-- Abrir o terminal do visual code e rodar o comando npm install;
+- Executar os passos abaixo no prompt:
 
-Passo 4
-1. Rodar o comando no terminal: npm run cypress:open
+1- npm init //preencher os campos, se quiser pode deixar tudo vazio. (Obs.: digitar "yes" no final.)
+2- npm install cypress --save-dev
 
-2. Clicar em cima da feature (kabum).
+3- Inserir o trecho abaixo no arquivo package.json:
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --spec=cypress/integration/test/*/"
+  },
+
+//Dentro do VS ou pelo cmd 
+4- rodar o comando: npm run cypress:open //dessa forma a pasta cypress será criada.
+
+5- npm install cypress-cucumber-preprocessor  -–save-dev //instala as dependencias do cucumber
+   
+6- npm audit fix //corrigi possiveis erros
+
+7- No arquivo cypress/plugins/index.js adicionar o seguinte trecho de código:
+const cucumber = require('cypress-cucumber-preprocessor').default
+ module.exports = (on, config) => {
+ on('file:preprocessor', cucumber())
+}
+
