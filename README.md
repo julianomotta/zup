@@ -15,9 +15,6 @@ a ponta de um cliente que:
 #################################### Passos de instalação cypress:
 
 https://docs.cypress.io/guides/getting-started/installing-cypress.html#Installing
-https://www.concrete.com.br/2019/01/24/cypress-com-cucumber-nos-testes-e2e/
-
-cypress run --reporter mochawesome
 
 Instalação Cypress:
 https://docs.cypress.io/pt-br/guides/getting-started/installing-cypress.html#npm-install
