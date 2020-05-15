@@ -55,11 +55,11 @@ And adicionar o produto ao carrinho
 
 Then devo ver o item adicionado com sucesso
 
-##### FALHA - Imperativo
+##### Feature: FALHA - Imperativo
 
-Feature: Fluxo de Compra com Produto Indisponivel
+Scenario: Fluxo de Compra com Produto Indisponivel
 
-Scenario: Dado que eestou acessando o site https://www.kabum.com.br/
+Dado que estou acessando o site https://www.kabum.com.br/
 
 Quando pesquiso por Placa de Vídeo VGA NVIDIA EVGA GEFORCE GTX 1070 na barra da página inicial
 
