@@ -1,4 +1,4 @@
-#################################### Desafio Zup - automação Web
+##### Desafio Zup - Automação Web
 Desafio Zup - Juliano
 
 Utilizando as ferramentas que preferir crie um teste automatizado que faça o fluxo de ponta
@@ -12,58 +12,32 @@ a ponta de um cliente que:
 5- Adicione o carrinho
 6- Valide o produto no carrinho
 
-#################################### Instalação do cypress:
+##### Pré-Condições:
 
-https://docs.cypress.io/pt-br/guides/getting-started/installing-cypress.html#npm-install
+1. Instalar o nodejs em sua máquina: https://nodejs.org/en/download/
+2. Instalar o visual code em sua máquina: https://code.visualstudio.com/download
+3. Ter o git instalado na máquina.
 
-#################################### Passos para executar o projeto:
-
-Passo 0
-- Instalar o nodejs em sua máquina: https://nodejs.org/en/download/
-- Instalar o visual code em sua máquina: https://code.visualstudio.com/download
+##### Passos para executar o projeto
 
 Passo 1
-- Criar uma pasta no C:\ com o nome que desejar;
+
+- Criar uma pasta no C:\ com o nome que desejar e clonar o projeto;
+ou
+- Fazer o dowload do mesmo e descompactar no C:\;
 
 Passo 2
-- Abrir o prompt de comando "cmd" e ir até a pasta criada;
-ou
-- Digitar cmd na pasta onde será aberto o terminal. //o mesmo é aberto com a url certa
+- Abrir o prompt de comando ou git bash na pasta raiz onde contém o cypress e rodar o comando "npm install" para que os arquivos "node_modules" sejam criados.
 
 Passo 3
-- Executar os passos abaixo no prompt:
+- Abra um novo terminal no VS-Code e execute o comando "npm run cypress:open" para que o cypress instale as dependência e abra a parte gráfica do teste para executar. 
 
-1- npm init //preencher os campos, se quiser pode deixar tudo vazio. (Obs.: digitar "yes" no final.)
-2- npm install cypress --save-dev
-
-3- Inserir o trecho abaixo no arquivo package.json:
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cypress": "cypress run",
-    "cypress:open": "cypress open",
-    "cypress:run": "cypress run --spec=cypress/integration/test/*/"
-  },
-
-//Dentro do VS ou pelo cmd 
-4- rodar o comando: npm run cypress:open //dessa forma a pasta cypress será criada.
-
-5- npm install cypress-cucumber-preprocessor  -–save-dev //instala as dependencias do cucumber
-   
-6- npm audit fix //corrigi possiveis erros
-
-7- No arquivo cypress/plugins/index.js adicionar o seguinte trecho de código:
-const cucumber = require('cypress-cucumber-preprocessor').default
- module.exports = (on, config) => {
- on('file:preprocessor', cucumber())
-}
-
-
-
-
+Passo 4
+- Clique em cima da .feature kabum ou clique no botão executar todos. E pronto, o cypress irá executar os testes.
 
 #################################### Cenários de Teste
 
-##SUCESSO## - Declarativo
+##### SUCESSO - Declarativo
 
 Feature: Fluxo de Compra
 Eu como um usuário, gostaria de validar se o produto foi adicionado no carrinho com sucesso
@@ -76,7 +50,7 @@ When comprar um produto de minha escolha
 And adicionar o produto ao carrinho
 Then devo ver o item adicionado com sucesso
 
-##FALHA## - Imperativo
+##### FALHA - Imperativo
 
 Feature: Fluxo de Compra com Produto Indisponivel
 
