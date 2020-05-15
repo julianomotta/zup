@@ -37,9 +37,7 @@ Passo 4
 
 #################################### Cenários de Teste
 
-##### SUCESSO - Declarativo
-
-Feature: Fluxo de Compra
+##### Feature: SUCESSO Fluxo de Compra - Declarativo
 
 Eu como um usuário, gostaria de validar se o produto foi adicionado no carrinho com sucesso
 
